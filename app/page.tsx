@@ -20,8 +20,8 @@ export default function HomePage() {
       <OperatingLoop />
       <FlagshipGrid />
       <StartupsPreview />
-      <VoicesSection />
       <PartnersLogoWall />
+      <VoicesSection />
       <CtaBand />
     </div>
   );
