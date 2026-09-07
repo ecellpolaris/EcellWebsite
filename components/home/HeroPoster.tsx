@@ -7,39 +7,33 @@ import dynamic from "next/dynamic";
 import { site } from "@/lib/site-config";
 import { ArrowUpRight, Zap, MessageCircle } from "lucide-react";
 
-const Lightfall = dynamic(() => import("@/components/ui/Lightfall"), {
+const SideRays = dynamic(() => import("@/components/ui/SideRays"), {
   ssr: false,
 });
 
 export const HeroPoster: React.FC = () => {
   return (
     <section className="relative overflow-hidden pt-8 pb-16 lg:pt-16 lg:pb-24 border-b border-paper-border corner-wash">
-      {/* Daylight Foundry Lightfall WebGL Shader Background */}
+      {/* Daylight Foundry Animated Rays Background Atmosphere */}
       <div
-        className="absolute inset-0 z-0 pointer-events-none opacity-65"
+        className="absolute top-0 right-0 w-full h-[700px] pointer-events-none opacity-65 z-0 overflow-hidden"
         style={{
-          maskImage: "linear-gradient(to bottom, black 75%, transparent 100%)",
-          WebkitMaskImage: "linear-gradient(to bottom, black 75%, transparent 100%)",
+          maskImage: "linear-gradient(to bottom, black 70%, transparent 100%)",
+          WebkitMaskImage: "linear-gradient(to bottom, black 70%, transparent 100%)",
         }}
       >
-        <Lightfall
-          colors={["#B6F000", "#95DA00", "#007C86", "#FF4D1C"]}
-          backgroundColor="#F6F3EC"
-          speed={0.32}
-          streakCount={4}
-          streakWidth={1.3}
-          streakLength={1.4}
-          glow={0.95}
-          density={0.42}
-          twinkle={0.75}
-          zoom={2.7}
-          backgroundGlow={0.2}
-          opacity={0.65}
-          mouseInteraction={true}
-          mouseStrength={0.4}
-          mouseRadius={1.0}
-          lightMode={true}
-          mixBlendMode="multiply"
+        <SideRays
+          origin="top-right"
+          rayColor1="#B6F000"
+          rayColor2="#FF4D1C"
+          speed={2.4}
+          intensity={2.2}
+          spread={2.8}
+          tilt={-12}
+          saturation={1.7}
+          blend={0.75}
+          falloff={1.3}
+          opacity={0.9}
         />
       </div>
 
