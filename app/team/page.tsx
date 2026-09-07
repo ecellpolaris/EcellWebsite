@@ -133,12 +133,13 @@ export default function TeamPage() {
 
         {/* Faculty Advisor Section */}
         <div className="bg-paper-card border border-paper-border rounded-[4px] p-4 sm:p-8 shadow-card flex flex-col sm:flex-row items-start sm:items-center gap-6">
-          <div className="relative w-20 h-20 rounded-full overflow-hidden border border-paper-border bg-paper-sunken shrink-0">
+          <div className="relative w-24 h-24 sm:w-28 sm:h-28 rounded-full overflow-hidden border-2 border-paper-border bg-paper-sunken shrink-0 shadow-sm">
             <Image
               src={FACULTY_ADVISOR.avatar}
               alt={FACULTY_ADVISOR.name}
               fill
-              className="object-cover grayscale"
+              className="object-cover"
+              priority
             />
           </div>
           <div className="space-y-1 flex-1">

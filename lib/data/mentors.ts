@@ -16,9 +16,9 @@ export interface Mentor {
 
 export const MENTORS: Mentor[] = [
   {
-    id: "avinash-ramakanth",
-    name: "Avinash Ramakanth",
-    role: "Faculty Advisor",
+    id: "avinash-ramakant",
+    name: "Avinash Ramakant",
+    role: "Dean & Faculty Advisor",
     company: "Polaris School of Technology",
     type: "Faculty",
     sector: "AI & Systems",
@@ -26,7 +26,7 @@ export const MENTORS: Mentor[] = [
     expertise: ["Systems Architecture", "IP & Patents", "Academic Spinouts"],
     availability: "Open for office hours",
     slotsThisWeek: 4,
-    avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=200&auto=format&fit=crop&q=80",
+    avatar: "/team/avinash.png",
     officeHoursVenue: "E Cell Bay, Room 204 (Wed 4 to 6 PM)",
   },
   {

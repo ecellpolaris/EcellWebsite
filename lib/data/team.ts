@@ -15,12 +15,12 @@ export interface TeamMember {
 }
 
 export const FACULTY_ADVISOR = {
-  name: "Avinash Ramakanth",
-  role: "Faculty Advisor, E Cell PST",
-  affiliation: "Department of Computer Science & Systems, Polaris School of Technology",
+  name: "Avinash Ramakant",
+  role: "Dean & Faculty Advisor, E Cell PST",
+  affiliation: "Dean, Polaris School of Technology",
   bio: "Overseeing student venture governance, incubator partnerships, and institutional research commercialization at Polaris. Dedicated to creating high-autonomy environments for student builders.",
   officeHours: "Wednesdays & Fridays, 4:00 PM to 6:00 PM (E Cell Bay, Room 204)",
-  avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400&auto=format&fit=crop&q=80",
+  avatar: "/team/avinash.png",
 };
 
 export const PRESIDENT: TeamMember = {

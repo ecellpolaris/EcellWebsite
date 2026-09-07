@@ -14,8 +14,8 @@ export const site = {
       "Builder who chose PST over IIT Bombay Aerospace, cracked GSoC in year one, now running the campus founder stack.",
   },
   facultyAdvisor: {
-    name: "Avinash Ramakanth",
-    role: "Faculty Advisor, E Cell PST",
+    name: "Avinash Ramakant",
+    role: "Dean & Faculty Advisor, E Cell PST",
     officeHours: "Wednesdays & Fridays, 4:00 PM to 6:00 PM (E Cell Bay)",
   },
   address:

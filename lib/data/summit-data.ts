@@ -149,12 +149,12 @@ export const SUMMIT_SPEAKERS: SummitSpeaker[] = [
     avatar: "https://images.unsplash.com/photo-1567532939604-b6b5b0db2604?w=200&auto=format&fit=crop&q=80",
   },
   {
-    name: "Avinash Ramakanth",
-    role: "Faculty Advisor",
+    name: "Avinash Ramakant",
+    role: "Dean & Faculty Advisor",
     company: "Polaris School of Technology",
     conclave: "Campus",
     topic: "Bridging Academic Deep Tech Research into Commercial Spinouts",
-    avatar: "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?w=200&auto=format&fit=crop&q=80",
+    avatar: "/team/avinash.png",
   },
   {
     name: "Vivek Ranjan",
