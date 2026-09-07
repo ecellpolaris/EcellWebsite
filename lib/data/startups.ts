@@ -29,14 +29,14 @@ export const STARTUPS: CampusStartup[] = [
     stage: "Funded",
     featured: true,
     founders: [
-      { name: "Krishiv Agarwal", year: "Class of 2024", dept: "Computer Science & Systems" },
-      { name: "Siddharth", year: "Class of 2024", dept: "Computer Science & AI" },
+      { name: "Krishiv Agarwal", year: "2029 Batch", dept: "Computer Science & Systems" },
+      { name: "Siddhartha Singh", year: "2029 Batch", dept: "Computer Science & AI" },
     ],
     oneLiner: "AI powered platform for coding, interviews, and developer skill building.",
     description: "Empowering global software developers with AI driven interview simulations, intelligent code benchmarking, and interactive technical skill sprints.",
     whatEcellDid: "Incubated in early PST builder cohort, backed with high throughput cloud infrastructure credits, and supported in global go to market.",
     metrics: [
-      { label: "Global Reach", value: "50k+ Visitors" },
+      { label: "Global Reach", value: "50k+ users" },
       { label: "US Monetization", value: "Paid US Users" },
       { label: "Focus", value: "Developer AI" },
     ],
@@ -51,7 +51,7 @@ export const STARTUPS: CampusStartup[] = [
     stage: "Funded",
     featured: true,
     founders: [
-      { name: "Saahi Dubey", year: "First Year", dept: "Computer Science & Systems" },
+      { name: "Saahi Dubey", year: "Third Year", dept: "Computer Science & Systems" },
     ],
     oneLiner: "India's best AI powered platform to invest in private equity.",
     description: "Democratizing private equity access for Indian retail and high net worth investors through intelligent discovery, compliance automation, and secondary liquidity.",
@@ -72,7 +72,7 @@ export const STARTUPS: CampusStartup[] = [
     stage: "MVP Live",
     featured: true,
     founders: [
-      { name: "Coder's OG", year: "First Year", dept: "Computer Science" },
+      { name: "Coder's OG", year: "Second Year", dept: "Computer Science" },
     ],
     oneLiner: "Open source workflow OS for contributors and maintainers.",
     description: "Streamlining the open source collaboration lifecycle with AI issue triage, automated pull request reviews, and reward mechanics for maintainers.",
@@ -83,7 +83,7 @@ export const STARTUPS: CampusStartup[] = [
       { label: "Type", value: "Open Source" },
     ],
     tags: ["Open Source", "DevTools"],
-    websiteUrl: "https://mergeship.dev",
+    websiteUrl: "https://mergeship.vercel.app",
   },
   {
     slug: "parkcity",
@@ -91,7 +91,7 @@ export const STARTUPS: CampusStartup[] = [
     sector: "Mobility",
     stage: "MVP Live",
     founders: [
-      { name: "Manav Nayak", year: "First Year", dept: "Product & Engineering" },
+      { name: "Manav Nayak", year: "Second Year", dept: "Product & Engineering" },
     ],
     oneLiner: "A premium parking discovery app that helps find, compare, navigate and list parking spaces.",
     description: "Eliminating urban parking friction in high congestion tech corridors like Bengaluru ORR through real-time spot reservations and peer listings.",
@@ -108,7 +108,7 @@ export const STARTUPS: CampusStartup[] = [
     sector: "Travel",
     stage: "Ideating",
     founders: [
-      { name: "Manav Nayak", year: "First Year", dept: "Product & Engineering" },
+      { name: "Manav Nayak", year: "Second Year", dept: "Product & Engineering" },
     ],
     oneLiner: "An invite only travel community curating experiences for a curated group of people.",
     description: "Connecting verified experiential travelers, digital nomads, and young operators through invite only micro expeditions and curated retreats.",
@@ -179,7 +179,7 @@ export const STARTUPS: CampusStartup[] = [
     sector: "HealthTech",
     stage: "MVP Live",
     founders: [
-      { name: "Rajdeep Singh", year: "First Year", dept: "Computer Science" },
+      { name: "Rajdeep Singh", year: "Second Year", dept: "Computer Science" },
     ],
     oneLiner: "24/7 AI triage plus a fast path to a real doctor.",
     description: "Barton, the conversational medical assistant, provides symptom triage, medication checks, and instant teleconsult escalations.",

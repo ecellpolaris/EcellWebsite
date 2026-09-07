@@ -54,9 +54,6 @@ export default function ContactPage() {
 
   const verticalEmails = [
     { label: "Executive & President", email: site.email },
-    { label: "FORGE & Pre Incubation", email: "incubation@polariscampus.com" },
-    { label: "E Summit & Corporate Alliances", email: "summit@polariscampus.com" },
-    { label: "WebOps & Tech Support", email: "webops@polariscampus.com" },
   ];
 
   return (
@@ -124,7 +121,7 @@ export default function ContactPage() {
             {/* Vertical Emails */}
             <div className="bg-paper-card border border-paper-border rounded-[4px] p-6 shadow-card space-y-3">
               <span className="micro-label text-ink-muted text-xs font-mono tracking-widest block">
-                DIRECT VERTICAL DESKS
+                OFFICIAL DESK
               </span>
               <div className="divide-y divide-paper-border/60 text-xs font-mono">
                 {verticalEmails.map((v, i) => (

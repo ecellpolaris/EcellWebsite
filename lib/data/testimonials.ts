@@ -11,7 +11,7 @@ export const TESTIMONIALS: Testimonial[] = [
   {
     id: "faculty-advisor",
     quote: "Most Indian universities run entrepreneurship cells as ceremonial event management clubs. At Polaris, E Cell is an engineering incubator. If students don't have code in production or customers using their tool, we don't issue participation certificates.",
-    author: "Dr. Arvind Narayanan",
+    author: "Avinash Ramakanth",
     role: "Faculty Advisor, E Cell PST",
     avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=120&auto=format&fit=crop&q=80",
     tag: "Faculty Desk",

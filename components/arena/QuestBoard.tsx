@@ -22,7 +22,7 @@ export const QuestBoard: React.FC = () => {
   }, []);
 
   const handleClaim = (quest: Quest) => {
-    if (completedQuests.includes(quest.id)) return;
+    if (quest.isUpcoming || completedQuests.includes(quest.id)) return;
     const res = completeQuest(quest.id);
     if (res.success) {
       setJustCompleted(quest.id);
@@ -58,7 +58,8 @@ export const QuestBoard: React.FC = () => {
       {/* Quest items list */}
       <div className="divide-y divide-paper-border/70">
         {QUESTS.map((quest) => {
-          const isDone = completedQuests.includes(quest.id);
+          const isDone = completedQuests.includes(quest.id) && !quest.isUpcoming;
+          const isUpcoming = quest.isUpcoming;
           return (
             <div
               key={quest.id}
@@ -76,7 +77,7 @@ export const QuestBoard: React.FC = () => {
                   <h4 className="font-display font-bold text-base text-ink">
                     {quest.title}
                   </h4>
-                  <span className="micro-label text-[10px] px-1.5 py-0.2 rounded bg-paper-sunken border border-paper-border text-ink-muted">
+                  <span className="micro-label text-[10px] px-1.5 py-0.2 rounded bg-paper-sunken border border-paper-border text-ink-muted uppercase">
                     {quest.category}
                   </span>
                 </div>
@@ -91,7 +92,11 @@ export const QuestBoard: React.FC = () => {
                   +{quest.xp} XP
                 </span>
 
-                {isDone ? (
+                {isUpcoming ? (
+                  <span className="font-mono text-xs font-bold text-ink-muted bg-paper-sunken border border-paper-border px-3 py-1 rounded-[3px] uppercase tracking-wider">
+                    Upcoming
+                  </span>
+                ) : isDone ? (
                   <span className="font-mono text-xs font-bold text-status-ok px-2.5 py-1">
                     CLAIMED
                   </span>

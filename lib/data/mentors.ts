@@ -16,8 +16,8 @@ export interface Mentor {
 
 export const MENTORS: Mentor[] = [
   {
-    id: "arvind-narayanan",
-    name: "Dr. Arvind Narayanan",
+    id: "avinash-ramakanth",
+    name: "Avinash Ramakanth",
     role: "Faculty Advisor",
     company: "Polaris School of Technology",
     type: "Faculty",

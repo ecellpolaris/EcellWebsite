@@ -39,10 +39,11 @@ export interface Quest {
   title: string;
   description: string;
   xp: number;
-  category: "daily" | "season" | "milestone";
+  category: "daily" | "season" | "milestone" | "upcoming";
   badgeRewardId?: string;
   actionUrl?: string;
   actionLabel?: string;
+  isUpcoming?: boolean;
 }
 
 export const QUESTS: Quest[] = [
@@ -61,9 +62,10 @@ export const QUESTS: Quest[] = [
     title: "Clear the Founder IQ Quiz",
     description: "Score at least 6/10 on the timed 10 question startup sprint.",
     xp: 60,
-    category: "daily",
+    category: "upcoming",
+    isUpcoming: true,
     actionUrl: "/arena/quiz",
-    actionLabel: "Take Quiz",
+    actionLabel: "Upcoming",
   },
   {
     id: "refer-cofounder",
@@ -87,17 +89,17 @@ export const QUESTS: Quest[] = [
   },
   {
     id: "summit-pass",
-    title: "Lock In Your E Summit 26 Pass",
-    description: "Request an invite pass for the UNFINISHED flagship summit.",
+    title: "Lock in for OJT Demo Day 2027",
+    description: "Request an invite pass for the OJT Demo Day 2027 flagship cohort.",
     xp: 20,
     category: "season",
     badgeRewardId: "summit-resident",
     actionUrl: "/summit",
-    actionLabel: "Request Pass",
+    actionLabel: "Lock In",
   },
   {
     id: "rsvp-event",
-    title: "RSVP to This Week's Workshop",
+    title: "RSVP to Upcoming Week's Workshop",
     description: "Reserve a seat at the upcoming campus founder breakdown.",
     xp: 30,
     category: "daily",
@@ -133,10 +135,10 @@ export function getDefaultProfile(): PlayerProfile {
     name: "PST Builder",
     year: "1st Year",
     dept: "Computer Science & AI",
-    xp: 120,
-    completedQuests: ["arena-quiz"],
+    xp: 60,
+    completedQuests: [],
     badges: ["first-pitch"],
-    quizHighScore: 7,
+    quizHighScore: 0,
     submittedIdeas: [],
     registeredEvents: [],
     createdAt: new Date().toISOString(),
@@ -154,7 +156,12 @@ export function getPlayerProfile(): PlayerProfile {
       localStorage.setItem(STORAGE_KEY, JSON.stringify(def));
       return def;
     }
-    return JSON.parse(raw);
+    const parsed = JSON.parse(raw);
+    if (parsed.completedQuests && parsed.completedQuests.includes("arena-quiz")) {
+      parsed.completedQuests = parsed.completedQuests.filter((id: string) => id !== "arena-quiz");
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(parsed));
+    }
+    return parsed;
   } catch {
     return getDefaultProfile();
   }

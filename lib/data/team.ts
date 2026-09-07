@@ -15,7 +15,7 @@ export interface TeamMember {
 }
 
 export const FACULTY_ADVISOR = {
-  name: "Dr. Arvind Narayanan",
+  name: "Avinash Ramakanth",
   role: "Faculty Advisor, E Cell PST",
   affiliation: "Department of Computer Science & Systems, Polaris School of Technology",
   bio: "Overseeing student venture governance, incubator partnerships, and institutional research commercialization at Polaris. Dedicated to creating high-autonomy environments for student builders.",

@@ -149,7 +149,7 @@ export const SUMMIT_SPEAKERS: SummitSpeaker[] = [
     avatar: "https://images.unsplash.com/photo-1567532939604-b6b5b0db2604?w=200&auto=format&fit=crop&q=80",
   },
   {
-    name: "Dr. Arvind Narayanan",
+    name: "Avinash Ramakanth",
     role: "Faculty Advisor",
     company: "Polaris School of Technology",
     conclave: "Campus",

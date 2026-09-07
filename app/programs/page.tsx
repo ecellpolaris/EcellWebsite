@@ -12,10 +12,10 @@ export default function ProgramsPage() {
 
   const categories = [
     { id: "All", label: "All Initiatives", badge: PROGRAMS.length },
-    { id: "Pre-Incubation", label: "Pre-Incubation" },
-    { id: "Competition", label: "Competitions" },
-    { id: "Access", label: "Operator Access" },
-    { id: "Community", label: "Community & Bootcamps" },
+    { id: "Pitch Day", label: "Pitch Day" },
+    { id: "Fellowship", label: "Fellowship" },
+    { id: "Global Fund", label: "Global Fund" },
+    { id: "Community", label: "Community" },
   ];
 
   const filtered =
@@ -34,7 +34,7 @@ export default function ProgramsPage() {
                 CAMPUS OPERATING SYSTEM
               </span>
               <span className="micro-label font-mono text-ink-muted text-xs">
-                9 TAILORED PROGRAMS
+                {PROGRAMS.length} TAILORED PROGRAMS
               </span>
             </div>
             <h1 className="font-display font-extrabold text-4xl sm:text-5xl lg:text-6xl text-ink tracking-tight">
@@ -66,13 +66,13 @@ export default function ProgramsPage() {
                   </span>
                   <Badge
                     variant={
-                      program.status === "LIVE"
+                      program.status === "Ongoing" || program.status === "LIVE"
                         ? "heat"
-                        : program.status === "APPS OPEN"
+                        : program.status === "Upcoming" || program.status === "APPS OPEN"
                         ? "lime"
-                        : program.status === "ROLLING"
-                        ? "teal"
-                        : "muted"
+                        : program.status === "Already done"
+                        ? "muted"
+                        : "teal"
                     }
                     size="xs"
                   >

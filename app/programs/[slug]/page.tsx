@@ -49,11 +49,13 @@ export default function ProgramDetailPage({ params }: ProgramPageProps) {
             </span>
             <Badge
               variant={
-                program.status === "LIVE"
+                program.status === "Ongoing" || program.status === "LIVE"
                   ? "heat"
-                  : program.status === "APPS OPEN"
+                  : program.status === "Upcoming" || program.status === "APPS OPEN"
                   ? "lime"
-                  : "muted"
+                  : program.status === "Already done"
+                  ? "muted"
+                  : "teal"
               }
               size="sm"
             >

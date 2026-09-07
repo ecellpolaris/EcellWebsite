@@ -59,7 +59,7 @@ All copy and campus constants are centralized in typed files:
    - Short: `PST`
    - City: `Bengaluru`
    - President: `Saahi Dubey`
-   - Faculty Advisor: `Dr. Arvind Narayanan`
+   - Faculty Advisor: `Avinash Ramakanth`
    - Campus bay address & office hours
    - Contact email: `ecell@polariscampus.com`
    - Social links & official Instagram (`@ecell.polaris`)
@@ -112,4 +112,4 @@ All copy and campus constants are centralized in typed files:
 ## 🛡️ Trust Architecture & SLAs
 - **Response SLA**: All contact and application channels maintain a public 48-hour response SLA.
 - **Physical Bay**: Room 204, E-Cell Bay, Polaris School of Technology (DivyaSree Wipro corridor, Bengaluru).
-- **Faculty Desk**: Dr. Arvind Narayanan, Wednesdays & Fridays 4:00 PM – 6:00 PM.
+- **Faculty Desk**: Avinash Ramakanth, Wednesdays & Fridays 4:00 PM – 6:00 PM.

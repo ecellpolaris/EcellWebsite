@@ -126,13 +126,13 @@ export const Footer: React.FC = () => {
                 </Link>
               </li>
               <li>
-                <Link href="/programs/forge" className="text-ink hover:underline decoration-lime decoration-2">
-                  FORGE Pre Incubation (8 Week)
+                <Link href="/programs/polaris-demo-day" className="text-ink hover:underline decoration-lime decoration-2">
+                  Polaris Demo Day
                 </Link>
               </li>
               <li>
-                <Link href="/programs/ignite" className="text-ink hover:underline decoration-lime decoration-2">
-                  IGNITE Pitch League
+                <Link href="/programs/polaris-fellowship" className="text-ink hover:underline decoration-lime decoration-2">
+                  Polaris Fellowship Program
                 </Link>
               </li>
               <li>
