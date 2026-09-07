@@ -5,33 +5,15 @@ import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { site } from "@/lib/site-config";
-import { getPlayerProfile } from "@/lib/xp";
-import { Menu, X, Zap, ArrowUpRight, Instagram, Mail, MessageCircle } from "lucide-react";
+import { Menu, X, ArrowUpRight, Instagram, Mail, MessageCircle } from "lucide-react";
 import { clsx } from "clsx";
 
 export const Navbar: React.FC = () => {
   const pathname = usePathname();
   const [mobileOpen, setMobileOpen] = useState(false);
   const [scrollProgress, setScrollProgress] = useState(0);
-  const [playerXp, setPlayerXp] = useState<number>(120);
 
   useEffect(() => {
-    // Read player XP
-    const profile = getPlayerProfile();
-    setPlayerXp(profile.xp);
-
-    const handleXpUpdate = (e: any) => {
-      if (e?.detail?.xp !== undefined) {
-        setPlayerXp(e.detail.xp);
-      } else {
-        const p = getPlayerProfile();
-        setPlayerXp(p.xp);
-      }
-    };
-
-    window.addEventListener("ecell-xp-updated", handleXpUpdate);
-    window.addEventListener("storage", handleXpUpdate);
-
     // Scroll progress handler
     const handleScroll = () => {
       const totalHeight = document.documentElement.scrollHeight - window.innerHeight;
@@ -43,8 +25,6 @@ export const Navbar: React.FC = () => {
     window.addEventListener("scroll", handleScroll, { passive: true });
 
     return () => {
-      window.removeEventListener("ecell-xp-updated", handleXpUpdate);
-      window.removeEventListener("storage", handleXpUpdate);
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
@@ -124,16 +104,6 @@ export const Navbar: React.FC = () => {
 
           {/* Right Action Stack */}
           <div className="flex items-center gap-2 sm:gap-3">
-            {/* The Arena XP balance pill */}
-            <Link
-              href="/arena"
-              title="The Arena: Campus Builder Pass"
-              className="flex items-center gap-1.5 px-2.5 py-1 bg-paper-sunken hover:bg-[#EAFCC0] border border-paper-border hover:border-lime rounded-[4px] transition-all group"
-            >
-              <Zap className="w-3.5 h-3.5 text-ink fill-lime group-hover:scale-110 transition-transform" />
-              <span className="font-mono font-bold text-xs text-ink">{playerXp} XP</span>
-            </Link>
-
             {/* Submit Idea CTA */}
             <Link
               href="/idea"

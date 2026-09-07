@@ -239,7 +239,7 @@ export default function JoinPage() {
                   SLA: Expected reply within 48 hours
                 </span>
                 <Button type="submit" variant="lime" className="w-full sm:w-auto">
-                  <span>Submit Application (+100 XP)</span>
+                  <span>Submit Application</span>
                   <ArrowRight className="w-4 h-4 ml-1.5" />
                 </Button>
               </div>

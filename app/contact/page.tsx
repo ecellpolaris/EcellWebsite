@@ -241,7 +241,7 @@ export default function ContactPage() {
                       Direct to {site.email}
                     </span>
                     <Button type="submit" variant="lime" className="w-full sm:w-auto">
-                      <span>Dispatch Message (+30 XP)</span>
+                      <span>Dispatch Message</span>
                       <ArrowRight className="w-4 h-4 ml-1.5" />
                     </Button>
                   </div>

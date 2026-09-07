@@ -397,7 +397,7 @@ export default function SummitPage() {
                   Cancel
                 </Button>
                 <Button type="submit" variant="lime">
-                  Submit Invitation Request (+100 XP)
+                  Submit Invitation Request
                 </Button>
               </div>
             </form>

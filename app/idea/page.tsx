@@ -194,9 +194,6 @@ export default function IdeaLabPage() {
                           ? "THE 30-DAY WEDGE"
                           : "THE CREW"}
                       </span>
-                      <span className="text-lime-ink bg-lime px-2 py-0.5 rounded font-bold">
-                        +120 XP REWARD
-                      </span>
                     </div>
 
                     <div className="w-full h-2 bg-paper-sunken rounded-full overflow-hidden border border-paper-border">
@@ -369,7 +366,7 @@ export default function IdeaLabPage() {
                       )}
 
                       <Button type="submit" variant="lime">
-                        <span>{currentStep === 3 ? "Submit Hypothesis (+120 XP)" : "Continue"}</span>
+                        <span>{currentStep === 3 ? "Submit Hypothesis" : "Continue"}</span>
                         <ArrowRight className="w-4 h-4 ml-1.5" />
                       </Button>
                     </div>
@@ -390,8 +387,7 @@ export default function IdeaLabPage() {
                       Hypothesis Ticket Issued.
                     </h3>
                     <p className="text-sm text-ink-muted max-w-md mx-auto">
-                      Your submission is logged in local persistence and granted{" "}
-                      <span className="font-bold text-ink">+{submittedTicket.xpEarned} Arena XP</span>.
+                      Your submission is logged in local persistence and queued for review.
                     </p>
                   </div>
 
@@ -509,7 +505,7 @@ export default function IdeaLabPage() {
               onClick={() => setIsPostRoleOpen(true)}
               leftIcon={<UserPlus className="w-4 h-4" />}
             >
-              Post a Role (+40 XP)
+              Post a Role
             </Button>
           </div>
 
@@ -533,7 +529,7 @@ export default function IdeaLabPage() {
                 leftIcon={<UserPlus className="w-4 h-4" />}
                 className="mx-auto"
               >
-                Post the First Role (+40 XP)
+                Post the First Role
               </Button>
             </div>
           ) : (
@@ -653,7 +649,7 @@ export default function IdeaLabPage() {
                 Cancel
               </Button>
               <Button type="submit" variant="lime">
-                Publish Listing (+40 XP)
+                Publish Listing
               </Button>
             </div>
           </form>

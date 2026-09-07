@@ -185,7 +185,7 @@ export const SUMMIT_PASSES: SummitPass[] = [
       "Access to all 4 Conclaves across 2 days",
       "Auditorium seating for keynotes & panel roasts",
       "Access to Demo Alley & sponsor booths",
-      "Digital Summit Certificate & +250 Arena XP",
+      "Digital Summit Certificate & Arena Builder Pass",
     ],
   },
   {

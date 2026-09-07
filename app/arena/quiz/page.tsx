@@ -220,10 +220,10 @@ export default function QuizPage() {
               </p>
             </div>
 
-            {/* XP Award Banner */}
+            {/* Award Banner */}
             <div className="p-3 bg-[#EAFCC0] border border-lime rounded-[4px] flex items-center justify-center gap-2 text-ink font-mono text-xs font-bold">
               <Zap className="w-4 h-4 fill-ink" />
-              <span>+{xpAwarded} XP Added to Your Profile Balance</span>
+              <span>Score Logged to Your Profile</span>
             </div>
 
             {/* Actions */}

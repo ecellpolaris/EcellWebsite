@@ -53,7 +53,7 @@ export const CtaBand: React.FC = () => {
               className="text-xs sm:text-sm font-mono text-lime hover:underline underline-offset-4 flex items-center gap-1.5 py-2 sm:ml-2"
             >
               <Zap className="w-3.5 h-3.5 fill-lime" />
-              <span>Claim Arena XP (+120) &rarr;</span>
+              <span>Enter The Arena &rarr;</span>
             </Link>
           </div>
         </div>

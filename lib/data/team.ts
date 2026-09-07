@@ -43,7 +43,7 @@ export const CORE_MEMBERS: TeamMember[] = [
     name: "Krishiv Agarwal",
     role: "Head of Technology & Systems",
     vertical: "Technology",
-    bio: "Co founder of EliteFolks (50k+ global visitors, paid US users). Architecting AI powered developer workflows, skill building engines, and campus platforms.",
+    bio: "Co founder of EliteFolks (50k+ users visit, paid US users). Architecting AI powered developer workflows, skill building engines, and campus platforms.",
     buildingOrObsessed: "Building AI driven interview simulation pipelines and high throughput developer infrastructure.",
     avatar: "/team/krishiv.png",
     socials: {

@@ -51,7 +51,7 @@ export const QuestBoard: React.FC = () => {
       {justCompleted && (
         <div className="p-3 bg-[#EAFCC0] border border-lime text-ink text-xs font-mono rounded-[4px] flex items-center gap-2 animate-in fade-in duration-200">
           <Zap className="w-4 h-4 text-ink fill-lime shrink-0" />
-          <span className="font-bold">Quest claimed! XP and badge granted to your profile.</span>
+          <span className="font-bold">Quest completed! Badge granted to your profile.</span>
         </div>
       )}
 
@@ -87,10 +87,6 @@ export const QuestBoard: React.FC = () => {
               </div>
 
               <div className="flex items-center gap-3 shrink-0 pl-6 sm:pl-0">
-                <span className="font-mono font-bold text-xs bg-lime text-ink px-2 py-1 rounded-[3px] border border-[#9DD400] flex items-center gap-1">
-                  <Zap className="w-3 h-3 fill-ink" />
-                  +{quest.xp} XP
-                </span>
 
                 {isUpcoming ? (
                   <span className="font-mono text-xs font-bold text-ink-muted bg-paper-sunken border border-paper-border px-3 py-1 rounded-[3px] uppercase tracking-wider">

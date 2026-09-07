@@ -59,7 +59,7 @@ export default function AmbassadorsPage() {
               setHasApplied(false);
             }}
           >
-            Apply as Ambassador (+60 XP)
+            Apply as Ambassador
           </Button>
         </div>
 
@@ -113,9 +113,6 @@ export default function AmbassadorsPage() {
                   <div className="flex items-center justify-between border-b border-paper-border pb-2 text-xs font-mono">
                     <span className="font-bold text-ink-muted uppercase">
                       {task.category}
-                    </span>
-                    <span className="font-bold text-ink bg-lime px-2 py-0.5 rounded text-[10px]">
-                      +{task.xpReward} XP
                     </span>
                   </div>
                   <h3 className="font-display font-bold text-lg text-ink">
@@ -189,7 +186,7 @@ export default function AmbassadorsPage() {
           isOpen={isApplyOpen}
           onClose={() => setIsApplyOpen(false)}
           title="Apply to SPARK Ambassadors"
-          kicker="INTER-COLLEGE NETWORK &middot; +60 ARENA XP"
+          kicker="INTER-COLLEGE NETWORK"
         >
           {!hasApplied ? (
             <form onSubmit={handleApply} className="space-y-4 pt-2">
@@ -230,7 +227,7 @@ export default function AmbassadorsPage() {
                   Cancel
                 </Button>
                 <Button type="submit" variant="lime">
-                  Submit Application (+60 XP)
+                  Submit Application
                 </Button>
               </div>
             </form>

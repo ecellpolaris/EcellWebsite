@@ -101,11 +101,11 @@ export const PlayerProfileCard: React.FC = () => {
         <div className="flex items-center justify-between text-xs font-mono">
           <span className="text-ink font-bold flex items-center gap-1.5">
             <Zap className="w-3.5 h-3.5 fill-lime text-ink" />
-            <span>{profile.xp} TOTAL XP</span>
+            <span>{profile.xp} TOTAL SCORE</span>
           </span>
           {nextLevel ? (
             <span className="text-ink-muted">
-              {xpNeeded} XP to {nextLevel.name}
+              {xpNeeded} pts to {nextLevel.name}
             </span>
           ) : (
             <span className="text-status-ok font-bold">MAX OPERATOR RANK</span>

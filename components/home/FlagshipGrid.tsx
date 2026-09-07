@@ -46,7 +46,7 @@ export const FlagshipGrid: React.FC = () => {
       theme: "FOUNDER GAMIFICATION",
       status: "LIVE" as const,
       statusVariant: "teal" as const,
-      tagline: "Earn XP, clear founder quests, take the timed IQ quiz, and top the campus board.",
+      tagline: "Clear founder quests, take the timed IQ quiz, and top the campus board.",
       metric: "400+ In The Loop",
       href: "/arena",
       icon: <Zap className="w-5 h-5 text-teal-data fill-teal-data/20" />,

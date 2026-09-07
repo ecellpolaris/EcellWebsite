@@ -10,7 +10,7 @@ import { Zap, HelpCircle, ArrowRight, MessageCircle } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "The Arena · Campus Founder Skill Gym",
-  description: "Track your startup quests, earn XP, unlock founder badges, and follow live campus dispatches.",
+  description: "Track your startup quests, unlock founder badges, and follow live campus dispatches.",
 };
 
 export default function ArenaPage() {
@@ -32,7 +32,7 @@ export default function ArenaPage() {
               The Arena.
             </h1>
             <p className="text-base sm:text-lg text-ink-muted leading-relaxed">
-              Effort is scored. Lurking is free, but XP is earned. Complete campus founder quests, test your startup IQ, and build your public track record.
+              Effort is scored. Lurking is free, but building is earned. Complete campus founder quests, test your startup IQ, and build your public track record.
             </p>
           </div>
 
@@ -52,7 +52,7 @@ export default function ArenaPage() {
               className="bg-ink hover:bg-ink-muted text-paper-card font-mono text-xs sm:text-sm px-5 py-3 rounded-[4px] flex items-center gap-2 transition-colors font-bold"
             >
               <HelpCircle className="w-4 h-4 text-lime" />
-              <span>Take Founder IQ Quiz (+60 XP)</span>
+              <span>Take Founder IQ Quiz</span>
               <ArrowRight className="w-3.5 h-3.5" />
             </Link>
           </div>

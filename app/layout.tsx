@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Syne, Outfit } from "next/font/google";
 import "./globals.css";
 import { site } from "@/lib/site-config";
-import { TopTicker } from "@/components/layout/TopTicker";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { NoiseOverlay } from "@/components/ui/NoiseOverlay";
@@ -99,7 +98,6 @@ export default function RootLayout({
       </head>
       <body className="bg-paper text-ink selection:bg-lime selection:text-ink font-body">
         <NoiseOverlay />
-        <TopTicker />
         <Navbar />
         <main id="main-content" className="min-h-[calc(100vh-140px)]">
           {children}

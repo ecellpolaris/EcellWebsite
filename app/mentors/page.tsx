@@ -203,7 +203,7 @@ export default function MentorsPage() {
                   disabled={mentor.availability === "Async only"}
                   className="w-full sm:w-auto"
                 >
-                  <span>{mentor.availability === "Open for office hours" ? "Book Slot (+40 XP)" : "Async Only"}</span>
+                  <span>{mentor.availability === "Open for office hours" ? "Book Slot" : "Async Only"}</span>
                 </Button>
               </div>
             </div>
@@ -215,7 +215,7 @@ export default function MentorsPage() {
           isOpen={isBookModalOpen}
           onClose={() => setIsBookModalOpen(false)}
           title={`Founder Hours: ${selectedMentor?.name}`}
-          kicker="25 MINUTE TACTICAL SLICE &middot; +40 ARENA XP"
+          kicker="25 MINUTE TACTICAL SLICE"
         >
           {!hasBooked ? (
             <form onSubmit={handleConfirmBooking} className="space-y-4 pt-2">
@@ -255,7 +255,7 @@ export default function MentorsPage() {
                   Cancel
                 </Button>
                 <Button type="submit" variant="lime">
-                  Lock Slot (+40 XP)
+                  Lock Slot
                 </Button>
               </div>
             </form>

@@ -221,9 +221,6 @@ function EventsContent() {
                   <span className="micro-label font-mono text-xs font-bold text-ink-muted uppercase">
                     [{event.category}] &middot; {event.kicker}
                   </span>
-                  <Badge variant="xp" size="xs">
-                    +{event.xpReward} XP
-                  </Badge>
                 </div>
 
                 <div className="space-y-1">

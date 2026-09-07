@@ -47,7 +47,7 @@ export const EVENTS: CampusEvent[] = [
       { time: "4:30 PM", activity: "Check-in & API Key verification" },
       { time: "5:00 PM", activity: "Building agent tools from scratch" },
       { time: "6:15 PM", activity: "Live deploy sprint: 30 minutes to ship" },
-      { time: "7:00 PM", activity: "Lightning peer roasts & +80 XP grant" },
+      { time: "7:00 PM", activity: "Lightning peer roasts & feedback" },
     ],
     prerequisites: ["Laptop with Node.js installed", "GitHub account", "Basic TypeScript familiarity"],
   },
@@ -78,7 +78,7 @@ export const EVENTS: CampusEvent[] = [
       { time: "4:45 PM", activity: "Cohort 2 pitches (AI tools & Campus ops)" },
       { time: "5:45 PM", activity: "Cheque awards & FORGE pre qualification" },
     ],
-    prerequisites: ["Open to all students", "Register attendance for +120 XP"],
+    prerequisites: ["Open to all students", "Register attendance in advance"],
   },
   {
     slug: "founder-ama-classplus-lineage",

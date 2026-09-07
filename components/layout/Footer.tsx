@@ -122,7 +122,7 @@ export const Footer: React.FC = () => {
               <li>
                 <Link href="/arena" className="font-semibold text-ink flex items-center gap-1.5 hover:text-ink/80">
                   <span className="w-2 h-2 rounded-full bg-[#007C86]" />
-                  <span>The Arena (XP &amp; Quests)</span>
+                  <span>The Arena</span>
                 </Link>
               </li>
               <li>

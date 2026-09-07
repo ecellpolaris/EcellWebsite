@@ -82,9 +82,6 @@ export default function EventDetailPage({ params }: EventPageProps) {
             <span className="stamp-tag bg-lime text-ink font-bold">
               {event.kicker}
             </span>
-            <Badge variant="xp" size="sm">
-              +{event.xpReward} XP REWARD
-            </Badge>
           </div>
 
           <div className="space-y-3">
@@ -131,7 +128,7 @@ export default function EventDetailPage({ params }: EventPageProps) {
             {hasRegistered ? (
               <div className="p-3 bg-[#EAFCC0] border border-lime rounded-[4px] flex items-center gap-2 text-ink font-mono text-xs font-bold">
                 <CheckCircle2 className="w-4 h-4 text-status-ok" />
-                <span>You are registered! +{event.xpReward} XP awarded to profile.</span>
+                <span>You are registered!</span>
               </div>
             ) : (
               <Button
@@ -139,7 +136,7 @@ export default function EventDetailPage({ params }: EventPageProps) {
                 onClick={() => setIsRsvpOpen(true)}
                 disabled={event.spotsLeft <= 0 && event.status !== "Upcoming"}
               >
-                <span>{event.status === "Upcoming" ? "Reserve Your Seat (+XP)" : "Event Concluded"}</span>
+                <span>{event.status === "Upcoming" ? "Reserve Your Seat" : "Event Concluded"}</span>
                 <ArrowRight className="w-4 h-4 ml-1.5" />
               </Button>
             )}
@@ -241,7 +238,7 @@ export default function EventDetailPage({ params }: EventPageProps) {
           isOpen={isRsvpOpen}
           onClose={() => setIsRsvpOpen(false)}
           title={`RSVP: ${event.title}`}
-          kicker={`+${event.xpReward} ARENA XP UPON REGISTRATION`}
+          kicker="CAMPUS EVENT REGISTRATION"
         >
           <form onSubmit={handleRegister} className="space-y-4 pt-2">
             <Input
@@ -287,7 +284,7 @@ export default function EventDetailPage({ params }: EventPageProps) {
                 Cancel
               </Button>
               <Button type="submit" variant="lime">
-                Confirm Registration (+{event.xpReward} XP)
+                Confirm Registration
               </Button>
             </div>
           </form>

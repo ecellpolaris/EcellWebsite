@@ -12,15 +12,22 @@ export const SpeakerMarquee: React.FC = () => {
   ];
 
   const speakers = [
-    { name: "Saahi Dubey", role: "President, E Cell PST" },
-    { name: "Priya Sundaram", role: "Principal, ORR Seed Ventures" },
-    { name: "Tanmay Sharma", role: "VP Engg, HyperScale Labs" },
-    { name: "Rohit Krishnan", role: "Founder, NexusEval" },
-    { name: "Mukul Rustagi", role: "Classplus & Polaris Founder" },
-    { name: "Shreya Shenoy", role: "Founder, DormCart" },
-    { name: "Neha Kulkarni", role: "Co Founder, D2C Collective" },
-    { name: "Varun Hegde", role: "Co Founder, VoltLoop" },
-    { name: "Zoya Khan", role: "Startup Attorney" },
+    { name: "Saahi Dubey", role: "President, E Cell PST · Founder, Sharesaathi" },
+    { name: "Krishiv Agarwal", role: "Head of Tech · Co-founder, EliteFolks" },
+    { name: "Siddhartha Singh", role: "Co-founder, EliteFolks" },
+    { name: "Sarthak Basu", role: "Head of Incubation, E Cell PST" },
+    { name: "Sakshi Kasat", role: "Head of Outreach & Alliances" },
+    { name: "Priyanka Potlia", role: "Head of Brand & Design" },
+    { name: "Kulratan Thapar", role: "Head of Treasury, E Cell PST" },
+    { name: "Manav Nayak", role: "Lead Engineer · Founder, ParkCity" },
+    { name: "Coder's OG", role: "Founder, MergeShip" },
+    { name: "Rajdeep Singh", role: "Founder, NestHealth" },
+    { name: "Priyanshu Gupta", role: "Head of WebOps & Infra" },
+    { name: "Garvit & Anurag", role: "Founders, Ejected Q" },
+    { name: "Shreyas & Utkarsh", role: "Founders, Nova Accounts" },
+    { name: "Manav & Harshita", role: "Founders, Verity" },
+    { name: "Avinash Ramakant", role: "Dean & Faculty Advisor, E Cell PST" },
+    { name: "Mukul Rustagi", role: "Founder, Classplus & Polaris" },
   ];
 
   return (

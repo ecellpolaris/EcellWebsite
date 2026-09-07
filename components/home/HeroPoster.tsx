@@ -95,12 +95,7 @@ export const HeroPoster: React.FC = () => {
               <span>Enter The Arena</span>
             </Link>
 
-            <Link
-              href="/summit"
-              className="text-xs sm:text-sm font-mono text-ink-muted hover:text-ink underline underline-offset-4 flex items-center gap-1 py-2"
-            >
-              <span>Explore E Summit 26 &rarr;</span>
-            </Link>
+
 
             <a
               href={site.links.whatsappCommunity}

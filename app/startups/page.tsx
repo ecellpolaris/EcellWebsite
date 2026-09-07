@@ -113,7 +113,7 @@ export default function StartupsPage() {
             }}
             leftIcon={<Plus className="w-4 h-4" />}
           >
-            Get Listed on Campus (+80 XP)
+            Get Listed on Campus
           </Button>
         </div>
 
@@ -338,7 +338,7 @@ export default function StartupsPage() {
                   Cancel
                 </Button>
                 <Button type="submit" variant="lime">
-                  Add to Directory (+80 XP)
+                  Add to Directory
                 </Button>
               </div>
             </form>
@@ -351,7 +351,7 @@ export default function StartupsPage() {
                 Startup Added to Portfolio!
               </h3>
               <p className="text-xs font-mono text-ink-muted">
-                {form.name} is now listed in the directory and +80 Arena XP has been credited.
+                {form.name} is now listed in the directory.
               </p>
               <Button variant="subtle" onClick={() => setIsSubmitModalOpen(false)}>
                 Close
