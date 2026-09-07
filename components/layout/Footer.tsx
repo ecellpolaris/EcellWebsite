@@ -194,8 +194,16 @@ export const Footer: React.FC = () => {
           </div>
 
           <div className="flex items-center gap-4">
-            <span className="hover:text-ink transition-colors">
-              Built with Next.js &amp; Tailwind
+            <span className="text-ink-muted">
+              This site is developed by{" "}
+              <a
+                href="https://github.com/Siddhartha-singh01"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-bold text-ink hover:text-amber-500 transition-colors"
+              >
+                Siddhartha Singh
+              </a>
             </span>
             <span>&bull;</span>
             <Link href="/contact" className="hover:text-ink transition-colors">
