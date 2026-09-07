@@ -60,7 +60,7 @@ export default function TeamPage() {
         <div className="ticket-perforated bg-paper-card border-2 border-ink rounded-[4px] p-5 sm:p-8 lg:p-10 shadow-lift">
           <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
             <div className="md:col-span-4 flex justify-center">
-              <div className="relative w-48 h-48 sm:w-60 sm:h-60 rounded-[4px] overflow-hidden border-2 border-ink bg-paper-sunken shadow-md group">
+              <div className="relative w-48 h-48 sm:w-60 sm:h-60 rounded-full overflow-hidden shadow-md group">
                 <Image
                   src={PRESIDENT.avatar}
                   alt={PRESIDENT.name}
@@ -197,7 +197,7 @@ export default function TeamPage() {
                   </div>
 
                   <div className="flex items-center gap-3.5">
-                    <div className="relative w-16 h-16 rounded-[4px] overflow-hidden border-2 border-ink bg-paper-sunken shrink-0 shadow-sm group">
+                    <div className="relative w-20 h-20 rounded-full overflow-hidden shrink-0 shadow-sm group">
                       <Image
                         src={member.avatar}
                         alt={member.name}

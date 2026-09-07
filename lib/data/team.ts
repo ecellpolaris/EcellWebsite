@@ -38,6 +38,7 @@ export const PRESIDENT: TeamMember = {
 };
 
 export const CORE_MEMBERS: TeamMember[] = [
+  PRESIDENT,
   {
     name: "Krishiv Agarwal",
     role: "Head of Technology & Systems",

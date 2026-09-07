@@ -134,7 +134,7 @@ export default function AboutPage() {
               </blockquote>
               <div className="pt-4 border-t border-paper-border flex flex-col sm:flex-row sm:items-center justify-between gap-3">
                 <div className="flex items-center gap-3">
-                  <div className="relative w-12 h-12 rounded-[4px] overflow-hidden border-2 border-ink shrink-0 bg-paper-sunken shadow-sm">
+                  <div className="relative w-12 h-12 rounded-full overflow-hidden shrink-0 shadow-sm">
                     <Image
                       src="/team/saahi.png"
                       alt={site.president.name}
