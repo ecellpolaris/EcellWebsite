@@ -69,7 +69,6 @@ export const VoicesSection: React.FC = () => {
           <h2 className="font-display font-black text-2xl sm:text-3xl md:text-4xl text-[#C9A86A] tracking-[0.22em] uppercase">
             TESTIMONIAL
           </h2>
-          <div className="w-16 h-0.5 bg-[#C9A86A]/40 mx-auto mt-3 rounded-full" />
         </div>
 
         {/* Carousel Container with Side Controls */}
@@ -156,10 +155,10 @@ export const VoicesSection: React.FC = () => {
                     key={t.id}
                     onClick={() => selectIndex(index)}
                     aria-label={`Go to testimonial by ${t.author}`}
-                    className={`h-2.5 rounded-full transition-all duration-300 focus:outline-none ${
+                    className={`rounded-full transition-all duration-300 focus:outline-none ${
                       isActive
-                        ? "w-8 bg-[#C9A86A] shadow-md shadow-[#C9A86A]/40"
-                        : "w-2.5 bg-stone-700 hover:bg-stone-500"
+                        ? "w-3.5 h-3.5 bg-[#C9A86A] shadow-md shadow-[#C9A86A]/40 ring-2 ring-[#C9A86A]/30"
+                        : "w-2.5 h-2.5 bg-stone-700 hover:bg-stone-500"
                     }`}
                   />
                 );
