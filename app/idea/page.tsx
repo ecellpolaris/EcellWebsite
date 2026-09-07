@@ -513,68 +513,92 @@ export default function IdeaLabPage() {
             </Button>
           </div>
 
-          {/* 6 Co-Founder Cards */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {boardPosts.map((post) => (
-              <div
-                key={post.id}
-                className="bg-paper-card border border-paper-border rounded-[4px] p-4 sm:p-6 shadow-card flex flex-col justify-between hover:border-ink/50 transition-all space-y-4 sm:space-y-5"
-              >
-                <div className="space-y-3">
-                  <div className="flex items-center justify-between border-b border-paper-border pb-3">
-                    <span className="micro-label text-xs font-mono text-ink-muted">
-                      {post.timePosted}
-                    </span>
-                    <Badge variant="lime" size="xs">
-                      {post.stage}
-                    </Badge>
-                  </div>
-
-                  <div>
-                    <h3 className="font-display font-bold text-xl text-ink">
-                      {post.projectTitle}
-                    </h3>
-                    <p className="text-xs text-ink-muted mt-1 leading-relaxed">
-                      {post.oneLiner}
-                    </p>
-                  </div>
-
-                  <div className="p-3 bg-paper-sunken border border-paper-border rounded-[3px] text-xs font-mono">
-                    <span className="text-ink-muted block text-[10px] uppercase">
-                      LOOKING FOR:
-                    </span>
-                    <span className="font-bold text-ink">
-                      {post.lookingFor}
-                    </span>
-                  </div>
-
-                  <div className="flex flex-wrap gap-1.5 pt-1">
-                    {post.tags.map((tag, i) => (
-                      <span
-                        key={i}
-                        className="text-[10px] font-mono px-2 py-0.5 bg-paper-sunken border border-paper-border rounded text-ink-muted"
-                      >
-                        {tag}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-
-                <div className="pt-4 border-t border-paper-border flex flex-wrap items-center justify-between gap-2 text-xs font-mono">
-                  <div>
-                    <span className="font-bold text-ink block">{post.postedBy.name}</span>
-                    <span className="text-ink-muted text-[11px]">{post.postedBy.handle} &middot; {post.postedBy.dept}</span>
-                  </div>
-                  <a
-                    href={`mailto:${post.contactEmail}`}
-                    className="px-3 py-1.5 bg-ink text-paper-card rounded-[3px] font-bold text-xs hover:bg-ink-muted transition-colors"
-                  >
-                    Reach Out
-                  </a>
-                </div>
+          {/* Co-Founder Cards or Empty State */}
+          {boardPosts.length === 0 ? (
+            <div className="bg-paper-card border border-paper-border rounded-[4px] p-8 sm:p-12 text-center space-y-4 shadow-card">
+              <div className="w-12 h-12 rounded-full bg-paper-sunken border border-paper-border flex items-center justify-center mx-auto text-ink">
+                <Users className="w-6 h-6" />
               </div>
-            ))}
-          </div>
+              <div className="space-y-1 max-w-md mx-auto">
+                <h3 className="font-display font-bold text-xl text-ink">
+                  No active roles posted yet.
+                </h3>
+                <p className="text-xs font-mono text-ink-muted leading-relaxed">
+                  Be the first dorm founder to scout a technical co-founder, lead product designer, or growth operator.
+                </p>
+              </div>
+              <Button
+                variant="lime"
+                onClick={() => setIsPostRoleOpen(true)}
+                leftIcon={<UserPlus className="w-4 h-4" />}
+                className="mx-auto"
+              >
+                Post the First Role (+40 XP)
+              </Button>
+            </div>
+          ) : (
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {boardPosts.map((post) => (
+                <div
+                  key={post.id}
+                  className="bg-paper-card border border-paper-border rounded-[4px] p-4 sm:p-6 shadow-card flex flex-col justify-between hover:border-ink/50 transition-all space-y-4 sm:space-y-5"
+                >
+                  <div className="space-y-3">
+                    <div className="flex items-center justify-between border-b border-paper-border pb-3">
+                      <span className="micro-label text-xs font-mono text-ink-muted">
+                        {post.timePosted}
+                      </span>
+                      <Badge variant="lime" size="xs">
+                        {post.stage}
+                      </Badge>
+                    </div>
+
+                    <div>
+                      <h3 className="font-display font-bold text-xl text-ink">
+                        {post.projectTitle}
+                      </h3>
+                      <p className="text-xs text-ink-muted mt-1 leading-relaxed">
+                        {post.oneLiner}
+                      </p>
+                    </div>
+
+                    <div className="p-3 bg-paper-sunken border border-paper-border rounded-[3px] text-xs font-mono">
+                      <span className="text-ink-muted block text-[10px] uppercase">
+                        LOOKING FOR:
+                      </span>
+                      <span className="font-bold text-ink">
+                        {post.lookingFor}
+                      </span>
+                    </div>
+
+                    <div className="flex flex-wrap gap-1.5 pt-1">
+                      {post.tags.map((tag, i) => (
+                        <span
+                          key={i}
+                          className="text-[10px] font-mono px-2 py-0.5 bg-paper-sunken border border-paper-border rounded text-ink-muted"
+                        >
+                          {tag}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+
+                  <div className="pt-4 border-t border-paper-border flex flex-wrap items-center justify-between gap-2 text-xs font-mono">
+                    <div>
+                      <span className="font-bold text-ink block">{post.postedBy.name}</span>
+                      <span className="text-ink-muted text-[11px]">{post.postedBy.handle} &middot; {post.postedBy.dept}</span>
+                    </div>
+                    <a
+                      href={`mailto:${post.contactEmail}`}
+                      className="px-3 py-1.5 bg-ink text-paper-card rounded-[3px] font-bold text-xs hover:bg-ink-muted transition-colors"
+                    >
+                      Reach Out
+                    </a>
+                  </div>
+                </div>
+              ))}
+            </div>
+          )}
         </div>
 
         {/* Modal: Post a Role */}
