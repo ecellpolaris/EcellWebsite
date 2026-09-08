@@ -7,33 +7,39 @@ import dynamic from "next/dynamic";
 import { site } from "@/lib/site-config";
 import { ArrowUpRight, Zap, MessageCircle } from "lucide-react";
 
-const SideRays = dynamic(() => import("@/components/ui/SideRays"), {
+const Lightfall = dynamic(() => import("@/components/ui/Lightfall"), {
   ssr: false,
 });
 
 export const HeroPoster: React.FC = () => {
   return (
     <section className="relative overflow-hidden pt-8 pb-16 lg:pt-16 lg:pb-24 border-b border-paper-border corner-wash">
-      {/* Daylight Foundry Animated Rays Background Atmosphere */}
+      {/* Daylight Foundry Lightfall WebGL Shader Background */}
       <div
-        className="absolute top-0 right-0 w-full h-[700px] pointer-events-none opacity-65 z-0 overflow-hidden"
+        className="absolute inset-0 z-0 pointer-events-none opacity-75"
         style={{
-          maskImage: "linear-gradient(to bottom, black 70%, transparent 100%)",
-          WebkitMaskImage: "linear-gradient(to bottom, black 70%, transparent 100%)",
+          maskImage: "linear-gradient(to bottom, black 80%, transparent 100%)",
+          WebkitMaskImage: "linear-gradient(to bottom, black 80%, transparent 100%)",
         }}
       >
-        <SideRays
-          origin="top-right"
-          rayColor1="#B6F000"
-          rayColor2="#FF4D1C"
-          speed={2.4}
-          intensity={2.2}
-          spread={2.8}
-          tilt={-12}
-          saturation={1.7}
-          blend={0.75}
-          falloff={1.3}
-          opacity={0.9}
+        <Lightfall
+          colors={["#B6F000", "#95DA00", "#007C86", "#FF4D1C"]}
+          backgroundColor="#F6F3EC"
+          speed={0.35}
+          streakCount={4}
+          streakWidth={1.3}
+          streakLength={1.4}
+          glow={0.95}
+          density={0.42}
+          twinkle={0.75}
+          zoom={2.7}
+          backgroundGlow={0.2}
+          opacity={0.75}
+          mouseInteraction={true}
+          mouseStrength={0.4}
+          mouseRadius={1.0}
+          lightMode={true}
+          mixBlendMode="multiply"
         />
       </div>
 
