@@ -57,9 +57,9 @@ const config: Config = {
         },
       },
       animation: {
-        marquee: "marquee 35s linear infinite",
-        "marquee-reverse": "marquee-reverse 38s linear infinite",
-        "marquee-fast": "marquee 22s linear infinite",
+        marquee: "marquee 80s linear infinite",
+        "marquee-reverse": "marquee-reverse 110s linear infinite",
+        "marquee-fast": "marquee 45s linear infinite",
       },
     },
   },

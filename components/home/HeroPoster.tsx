@@ -25,7 +25,7 @@ export const HeroPoster: React.FC = () => {
         <Lightfall
           colors={["#B6F000", "#95DA00", "#007C86", "#FF4D1C"]}
           backgroundColor="#F6F3EC"
-          speed={0.35}
+          speed={0.2}
           streakCount={4}
           streakWidth={1.3}
           streakLength={1.4}

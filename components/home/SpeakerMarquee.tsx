@@ -34,7 +34,7 @@ export const SpeakerMarquee: React.FC = () => {
     <div className="py-4 border-b border-paper-border bg-paper-sunken overflow-hidden select-none">
       {/* Top Track: Verbs Loop */}
       <div className="flex overflow-hidden whitespace-nowrap mb-2.5">
-        <div className="flex items-center gap-8 animate-marquee font-mono text-xs font-bold text-ink tracking-[0.2em]">
+        <div className="flex items-center gap-8 animate-marquee hover:[animation-play-state:paused] font-mono text-xs font-bold text-ink tracking-[0.2em] cursor-default">
           {[...steps, ...steps, ...steps, ...steps].map((item, idx) => (
             <span key={idx} className="flex items-center gap-8">
               <span>{item}</span>
@@ -46,7 +46,7 @@ export const SpeakerMarquee: React.FC = () => {
 
       {/* Bottom Track: Names Ticker */}
       <div className="flex overflow-hidden whitespace-nowrap">
-        <div className="flex items-center gap-6 animate-marquee-reverse text-xs text-ink-muted">
+        <div className="flex items-center gap-6 animate-marquee-reverse hover:[animation-play-state:paused] text-xs text-ink-muted cursor-default">
           {[...speakers, ...speakers, ...speakers].map((spk, idx) => (
             <div
               key={idx}
