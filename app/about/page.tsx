@@ -23,7 +23,7 @@ export default function AboutPage() {
     { year: "EARLY 2024", title: "Polaris Campus Opens", desc: "Founded by Classplus founders Mukul Rustagi and Bhaswat Agarwal inside the DivyaSree tech park." },
     { year: "FALL 2024", title: "E Cell PST Bootstrapped", desc: "Saahi Dubey and early student engineers formalize the cell, running first midnight hack nights." },
     { year: "2025", title: "FORGE & IGNITE Launch", desc: "First 6 campus ventures incubated; first angel cheques written for student prototypes." },
-    { year: "2026", title: "The Arena & E Summit 26", desc: "Public gamification engine deployed; UNFINISHED flagship summit gathers 500+ builders." },
+    { year: "2026", title: "The Arena & Global Ecosystem", desc: "Public gamification engine deployed; connecting 500+ builders with global capital and operators." },
   ];
 
   const verticals = [
@@ -74,7 +74,7 @@ export default function AboutPage() {
     {
       id: "faq-8",
       question: "Can founders from other colleges participate in your competitions?",
-      answer: "Yes! IGNITE Pitch League, E Summit 26, and the SPARK Ambassadors program are fully open to student builders from all recognized institutions across India.",
+      answer: "Yes! Polaris Demo Day, Pitch Leagues, and the SPARK Ambassadors program are fully open to student builders from all recognized institutions across India.",
     },
   ];
 

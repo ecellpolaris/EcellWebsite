@@ -6,16 +6,16 @@ import { ArrowRight, Flame, Trophy, Hammer, Globe, Users, Zap } from "lucide-rea
 export const FlagshipGrid: React.FC = () => {
   const flagships = [
     {
-      title: "E Summit 26",
-      theme: "UNFINISHED",
-      status: "APPS OPEN" as const,
+      title: "Polaris Global Fund",
+      theme: "$10M+ ACCESS",
+      status: "Ongoing" as const,
       statusVariant: "lime" as const,
-      tagline: "48 hour flagship festival with 4 conclaves, 25+ operators, and direct angel demo alley.",
-      metric: "₹3.5L Grant Pool",
-      href: "/summit",
-      icon: <Flame className="w-5 h-5 text-heat" />,
+      tagline: "Direct cloud infrastructure credits, AI compute access, and technical mentorship from 50+ global tech partners.",
+      metric: "$10M+ Global Resources",
+      href: "/programs/polaris-global-fund",
+      icon: <Globe className="w-5 h-5 text-ink" />,
       span: "md:col-span-2",
-      badgeText: "OCT 17 to 18",
+      badgeText: "GLOBAL FUND",
     },
     {
       title: "Polaris Demo Day",
@@ -70,7 +70,7 @@ export const FlagshipGrid: React.FC = () => {
       theme: "CAMPUS NETWORK",
       status: "APPS OPEN" as const,
       statusVariant: "lime" as const,
-      tagline: "Represent E Cell PST across Karnataka. Run satellite pitches and win VIP summit passes.",
+      tagline: "Represent E Cell PST across Karnataka. Run satellite pitches and scout student ventures.",
       metric: "12 Partner Colleges",
       href: "/ambassadors",
       icon: <Globe className="w-5 h-5 text-ink" />,

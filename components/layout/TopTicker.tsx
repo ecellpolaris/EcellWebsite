@@ -12,7 +12,7 @@ export const TopTicker: React.FC = () => {
   });
 
   useEffect(() => {
-    // E Summit date: Oct 17, 2026
+    // Flagship date: Oct 17, 2026
     const target = new Date("2026-10-17T09:00:00+05:30").getTime();
 
     const interval = setInterval(() => {
@@ -37,7 +37,7 @@ export const TopTicker: React.FC = () => {
             <Flame className="w-3 h-3 animate-pulse" /> LIVE
           </span>
           <span className="truncate text-paper-sunken">
-            FORGE Cohort 03 &amp; E Summit 26 Passes Open
+            FORGE Cohort 03 Applications &amp; Demo Day Registration Open
           </span>
         </div>
 
@@ -47,10 +47,10 @@ export const TopTicker: React.FC = () => {
           </span>
           <span className="text-paper-border">|</span>
           <Link
-            href="/summit"
+            href="/programs/polaris-demo-day"
             className="text-xs hover:text-lime flex items-center gap-1 transition-colors underline underline-offset-2"
           >
-            <span>Request Pass</span>
+            <span>Demo Day</span>
             <ArrowRight className="w-3 h-3" />
           </Link>
         </div>

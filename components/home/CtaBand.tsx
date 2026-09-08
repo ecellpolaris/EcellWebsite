@@ -19,7 +19,7 @@ export const CtaBand: React.FC = () => {
           </h2>
 
           <p className="text-base sm:text-lg text-paper-sunken/80 max-w-xl leading-relaxed">
-            Whether you have an unhinged ML thesis at 2 AM or want to run operations for our flagship summit, the door to the E Cell Bay is unlocked.
+            Whether you have an unhinged ML thesis at 2 AM or want to build production systems with our founder squad, the door to the E Cell Bay is unlocked.
           </p>
 
           <div className="pt-4 flex flex-wrap items-center gap-4">

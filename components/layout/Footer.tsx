@@ -136,8 +136,8 @@ export const Footer: React.FC = () => {
                 </Link>
               </li>
               <li>
-                <Link href="/summit" className="text-ink hover:underline decoration-lime decoration-2">
-                  E Summit 26 (UNFINISHED)
+                <Link href="/programs/polaris-global-fund" className="text-ink hover:underline decoration-lime decoration-2">
+                  Polaris Global Fund
                 </Link>
               </li>
               <li>
@@ -187,25 +187,9 @@ export const Footer: React.FC = () => {
           <div className="flex flex-wrap items-center gap-3">
             <span>&copy; {new Date().getFullYear()} {site.brand}.</span>
             <span>All rights reserved.</span>
-            <span className="hidden sm:inline">&bull;</span>
-            <span className="font-medium text-ink">
-              Saahi Dubey, President
-            </span>
           </div>
 
           <div className="flex items-center gap-4">
-            <span className="text-ink-muted">
-              This site is developed by{" "}
-              <a
-                href="https://github.com/Siddhartha-singh01"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="font-bold text-ink hover:text-amber-500 transition-colors"
-              >
-                Siddhartha Singh
-              </a>
-            </span>
-            <span>&bull;</span>
             <Link href="/contact" className="hover:text-ink transition-colors">
               Contact Bay
             </Link>

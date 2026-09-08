@@ -1,7 +1,7 @@
 export interface GalleryItem {
   id: string;
   title: string;
-  category: "Summit" | "Workshops" | "Team" | "Behind the scenes";
+  category: "Pitch Day" | "Workshops" | "Team" | "Behind the scenes";
   date: string;
   venue: string;
   caption: string;
@@ -12,9 +12,9 @@ export interface GalleryItem {
 
 export const GALLERY_ITEMS: GalleryItem[] = [
   {
-    id: "summit-keynote-auditorium",
+    id: "pitch-day-keynote-auditorium",
     title: "The Mainstage Silence",
-    category: "Summit",
+    category: "Pitch Day",
     date: "Oct 2025",
     venue: "PST Main Auditorium",
     caption: "350 students listening to the reality of Indian early stage CAC teardowns.",
@@ -75,15 +75,15 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     aspect: "landscape",
   },
   {
-    id: "summit-trophy-ceremony",
+    id: "pitch-day-trophy-ceremony",
     title: "Cheques on Daylight",
-    category: "Summit",
+    category: "Pitch Day",
     date: "Oct 2025",
     venue: "Open Amphitheatre",
     caption: "₹1,50,000 non dilutive cheque handed to the winner of the Inter College Pitch League.",
     imageUrl: "https://images.unsplash.com/photo-1511578314322-379afb476865?w=600&auto=format&fit=crop&q=80",
     aspect: "landscape",
-    stamped: "E SUMMIT",
+    stamped: "PITCH DAY",
   },
   {
     id: "midnight-hack-pizza-boxes",

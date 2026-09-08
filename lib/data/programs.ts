@@ -127,15 +127,15 @@ export const PROGRAMS: Program[] = [
     timeline: [
       { step: "Month 1", title: "Foundations & Booting Up", desc: "Onboarding call, playbook walkthrough, and ambassador kit." },
       { step: "Month 2-4", title: "Campus Activations & Hack Leagues", desc: "Host satellite ideation sprints and pitch screening nodes." },
-      { step: "Month 5-6", title: "E Summit Delegation", desc: "Lead your college delegation to Bengaluru for the flagship festival." },
+      { step: "Month 5-6", title: "Polaris Demo Day Delegation", desc: "Lead your college delegation to Bengaluru for the flagship demo day showcase." },
     ],
     outcomes: [
       "Official Letter of Recommendation from President Saahi Dubey & Faculty Desk",
-      "VIP all access delegate pass to E Summit 26",
+      "VIP all access delegate pass to Polaris Demo Day",
       "Direct referral into Polaris partner startup hiring pipelines",
     ],
     mentorsCount: "Core Team Leads",
-    prizesOrGrant: "Merch + LoRs + Summit Passes",
+    prizesOrGrant: "Merch + LoRs + Demo Day Passes",
     faqs: [
       { q: "Can non-PST students apply?", a: "Yes! In fact, the SPARK Ambassador program is explicitly for external college ambassadors across India." },
     ],

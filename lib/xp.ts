@@ -29,7 +29,7 @@ export const BADGES: Badge[] = [
   { id: "first-pitch", name: "First Pitch", description: "Pitched in front of a live panel of operators.", icon: "🎤", category: "pitching" },
   { id: "night-owl", name: "Night Owl", description: "Submitted an idea or quest log between 1 AM and 5 AM.", icon: "🌙", category: "shipping" },
   { id: "squad-up", name: "Squad Up", description: "Found a co founder through the PST Idea Lab board.", icon: "🤝", category: "community" },
-  { id: "summit-resident", name: "Summit Resident", description: "Registered for all 4 conclaves at E Summit 26.", icon: "🎟️", category: "intel" },
+  { id: "demo-day-fellow", name: "Demo Day Resident", description: "Registered for the flagship Polaris Demo Day showcase.", icon: "🎟️", category: "intel" },
   { id: "mentor-magnet", name: "Mentor Magnet", description: "Booked and attended an official Founder Hours slot.", icon: "🎯", category: "community" },
   { id: "campus-diplomat", name: "Campus Diplomat", description: "Represented PST at an inter college entrepreneurship league.", icon: "🏛️", category: "community" },
 ];
@@ -88,13 +88,13 @@ export const QUESTS: Quest[] = [
     actionLabel: "Book Mentor",
   },
   {
-    id: "summit-pass",
-    title: "Lock in for OJT Demo Day 2027",
-    description: "Request an invite pass for the OJT Demo Day 2027 flagship cohort.",
+    id: "demo-day-pass",
+    title: "Lock in for Polaris Demo Day",
+    description: "Request an attendee or pitch pass for the flagship Polaris Demo Day.",
     xp: 20,
     category: "season",
-    badgeRewardId: "summit-resident",
-    actionUrl: "/summit",
+    badgeRewardId: "demo-day-fellow",
+    actionUrl: "/programs/polaris-demo-day",
     actionLabel: "Lock In",
   },
   {

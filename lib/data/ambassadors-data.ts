@@ -11,8 +11,8 @@ export const AMBASSADOR_PERKS: AmbassadorPerk[] = [
     icon: "📜",
   },
   {
-    title: "VIP E Summit 26 All Access Pass",
-    desc: "Complimentary access to all 4 conclaves, speaker green rooms, and closed door dinner mixers.",
+    title: "VIP Polaris Demo Day All Access Pass",
+    desc: "Complimentary access to investor pitch tracks, operator green rooms, and closed door dinner mixers.",
     icon: "🎟️",
   },
   {
@@ -46,12 +46,12 @@ export const AMBASSADOR_TASKS: AmbassadorTask[] = [
     desc: "Organize a 2 hour problem framing sprint at your college. Top team advances directly to IGNITE Round 2.",
   },
   {
-    id: "task-summit-delegation",
-    category: "Summit Delegation",
-    title: "Lead a 10 Student Summit Delegation",
+    id: "task-demo-day-delegation",
+    category: "Demo Day Delegation",
+    title: "Lead a 10 Student Delegation",
     xpReward: 200,
     cadence: "Annual",
-    desc: "Coordinate a group of passionate builders from your campus to attend E Summit 26 in Bengaluru.",
+    desc: "Coordinate a group of passionate builders from your campus to attend Polaris Demo Day in Bengaluru.",
   },
   {
     id: "task-scout",

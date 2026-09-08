@@ -128,7 +128,7 @@ function EventsContent() {
     { id: "Past", label: "Past Archives", badge: EVENTS.filter((e) => e.status === "Past").length },
   ];
 
-  const categories = ["All", "Workshop", "Competition", "Talk", "Mixer", "Summit"];
+  const categories = ["All", "Workshop", "Competition", "Talk", "Mixer", "Hackathon"];
 
   const filtered = EVENTS.filter((e) => {
     const matchesStatus = e.status === activeStatus;

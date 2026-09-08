@@ -35,7 +35,6 @@ export const metadata: Metadata = {
     "FORGE pre incubation",
     "IGNITE pitch league",
     "The Arena",
-    "E Summit 26",
     "Saahi Dubey",
   ],
   authors: [{ name: "E Cell PST WebOps", url: site.instagram }],

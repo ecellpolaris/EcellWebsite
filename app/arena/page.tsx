@@ -5,12 +5,11 @@ import { site } from "@/lib/site-config";
 import { PlayerProfileCard } from "@/components/arena/PlayerProfileCard";
 import { QuestBoard } from "@/components/arena/QuestBoard";
 import { BadgeGrid } from "@/components/arena/BadgeGrid";
-import { LiveNotices } from "@/components/arena/LiveNotices";
 import { Zap, HelpCircle, ArrowRight, MessageCircle } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "The Arena · Campus Founder Skill Gym",
-  description: "Track your startup quests, unlock founder badges, and follow live campus dispatches.",
+  description: "Track your startup quests, unlock founder badges, and build your public track record.",
 };
 
 export default function ArenaPage() {
@@ -61,18 +60,10 @@ export default function ArenaPage() {
         {/* Top: Player Card */}
         <PlayerProfileCard />
 
-        {/* Main Grid: Quests & Badges on Left, Leaderboard & Notices on Right */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-          {/* Left Column (7 cols): Quests & Badges */}
-          <div className="lg:col-span-7 space-y-8">
-            <QuestBoard />
-            <BadgeGrid />
-          </div>
-
-          {/* Right Column (5 cols): Notices */}
-          <div className="lg:col-span-5 space-y-8">
-            <LiveNotices />
-          </div>
+        {/* Main Sections: Quests & Badges */}
+        <div className="space-y-8">
+          <QuestBoard />
+          <BadgeGrid />
         </div>
       </div>
     </div>

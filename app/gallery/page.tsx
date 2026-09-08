@@ -10,7 +10,7 @@ export default function GalleryPage() {
   const [activeCategory, setActiveCategory] = useState<string>("All");
   const [selectedPhoto, setSelectedPhoto] = useState<GalleryItem | null>(null);
 
-  const categories = ["All", "Summit", "Workshops", "Team", "Behind the scenes"];
+  const categories = ["All", "Hackathons", "Workshops", "Team", "Behind the scenes"];
 
   const filtered =
     activeCategory === "All"

@@ -43,8 +43,8 @@ export const OperatingLoop: React.FC = () => {
       step: "06",
       name: "RAISE",
       sub: "Angel / Micro VC Demo",
-      targetUrl: "/summit",
-      action: "E Summit 26",
+      targetUrl: "/programs/polaris-demo-day",
+      action: "Polaris Demo Day",
     },
   ];
 

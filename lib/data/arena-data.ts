@@ -31,7 +31,7 @@ export const SEEDED_LEADERBOARD: LeaderboardEntry[] = [
 
 export interface LiveNotice {
   id: string;
-  tag: "FORGE" | "IGNITE" | "SUMMIT" | "MENTORS" | "BAY";
+  tag: "FORGE" | "IGNITE" | "DEMO DAY" | "MENTORS" | "BAY";
   title: string;
   timestamp: string;
   linkText?: string;
@@ -49,11 +49,11 @@ export const LIVE_NOTICES: LiveNotice[] = [
   },
   {
     id: "n-1",
-    tag: "SUMMIT",
-    title: "E Summit 26 conclave speaker schedule published. 12 operators confirmed.",
+    tag: "DEMO DAY",
+    title: "Polaris Demo Day speaker and mentor schedule published. 15 operators confirmed.",
     timestamp: "2 hours ago",
-    linkText: "View Conclaves",
-    linkUrl: "/summit",
+    linkText: "View Demo Day",
+    linkUrl: "/programs/polaris-demo-day",
   },
   {
     id: "n-2",

@@ -45,7 +45,6 @@ export const Navbar: React.FC = () => {
 
   const secondaryLinks = [
     { href: "/mentors", label: "Mentors" },
-    { href: "/summit", label: "E Summit 26" },
     { href: "/ambassadors", label: "Ambassadors" },
     { href: "/resources", label: "Resources" },
     { href: "/gallery", label: "Gallery" },

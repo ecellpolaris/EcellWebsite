@@ -6,7 +6,6 @@ import { MENTORS, Mentor } from "@/lib/data/mentors";
 import { PRESIDENT, FACULTY_ADVISOR, CORE_MEMBERS, TeamMember } from "@/lib/data/team";
 import { GALLERY_ITEMS, GalleryItem } from "@/lib/data/gallery";
 import { RESOURCES, FounderResource } from "@/lib/data/resources";
-import { SUMMIT_CONCLAVES, SummitConclave } from "@/lib/data/summit-data";
 import { SEEDED_LEADERBOARD, LIVE_NOTICES, LeaderboardEntry, LiveNotice } from "@/lib/data/arena-data";
 import { CA_LEADERBOARD, CampusAmbassadorRank } from "@/lib/data/ambassadors-data";
 
@@ -31,7 +30,6 @@ const cache = {
   mentors: { data: MENTORS, timestamp: Date.now() } as CacheEntry<Mentor[]>,
   gallery: { data: GALLERY_ITEMS, timestamp: Date.now() } as CacheEntry<GalleryItem[]>,
   resources: { data: RESOURCES, timestamp: Date.now() } as CacheEntry<FounderResource[]>,
-  conclaves: { data: SUMMIT_CONCLAVES, timestamp: Date.now() } as CacheEntry<SummitConclave[]>,
   leaderboard: { data: SEEDED_LEADERBOARD, timestamp: Date.now() } as CacheEntry<LeaderboardEntry[]>,
   notices: { data: LIVE_NOTICES, timestamp: Date.now() } as CacheEntry<LiveNotice[]>,
   ambassadors: { data: CA_LEADERBOARD, timestamp: Date.now() } as CacheEntry<CampusAmbassadorRank[]>,

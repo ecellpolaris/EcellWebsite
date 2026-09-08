@@ -7,7 +7,7 @@ export default function NotFound() {
     { href: "/programs", label: "Programs & Forge" },
     { href: "/events", label: "Calendar & Hacks" },
     { href: "/startups", label: "Startup Portfolio" },
-    { href: "/summit", label: "E Summit 26" },
+    { href: "/arena", label: "The Arena" },
     { href: "/team", label: "Core Team" },
     { href: "/contact", label: "Contact Bay" },
   ];

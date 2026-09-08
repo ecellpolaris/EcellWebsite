@@ -43,8 +43,8 @@ export const CORE_MEMBERS: TeamMember[] = [
     name: "Krishiv Agarwal",
     role: "Head of Technology & Systems",
     vertical: "Technology",
-    bio: "Co founder of EliteFolks (50k+ users visit, paid US users). Architecting AI powered developer workflows, skill building engines, and campus platforms.",
-    buildingOrObsessed: "Building AI driven interview simulation pipelines and high throughput developer infrastructure.",
+    bio: "Co founder of EliteFolks (50k+ users visit, paid US users). Architecting AI powered developer workflows, skill building engines, and campus platforms. Made 2 Lakh in just 1 month",
+    buildingOrObsessed: "Obsessed with scalable tech stacks, AI simulations, and fueling the idea-to-funding startup pipeline.",
     avatar: "/team/krishiv.png",
     socials: {
       linkedin: "https://www.linkedin.com/in/krishivag?utm_source=share_via&utm_content=profile&utm_medium=member_ios",
@@ -76,7 +76,7 @@ export const CORE_MEMBERS: TeamMember[] = [
     name: "Priyanka Potlia",
     role: "Head of Brand & Product Design",
     vertical: "Design & Brand",
-    bio: "Crafting the visual identity of E Cell PST, tactile Summit collateral, merchandise drops, and daylight design systems.",
+    bio: "Crafting the visual identity of E Cell PST, tactile event collateral, merchandise drops, and daylight design systems.",
     buildingOrObsessed: "Obsessed with Swiss editorial typography, tactile paper textures, and eliminating generic corporate templates.",
     avatar: "/team/priyanka.png",
     socials: {

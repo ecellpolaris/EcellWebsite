@@ -211,7 +211,7 @@ export default function ContactPage() {
                         className="w-full bg-paper-card border border-paper-border text-ink text-sm px-3.5 py-2.5 rounded-[4px] focus:outline-none focus:ring-1 focus:ring-ink"
                       >
                         <option value="General Inquiry">General Inquiry</option>
-                        <option value="E Summit Sponsorship">E Summit Sponsorship</option>
+                        <option value="Programs & Pitch Sponsorship">Programs &amp; Pitch Sponsorship</option>
                         <option value="Mentor / Operator Office Hours">Mentor / Operator Office Hours</option>
                         <option value="Campus Venture Partnership">Campus Venture Partnership</option>
                         <option value="Media & Press">Media &amp; Press</option>

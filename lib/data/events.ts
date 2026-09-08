@@ -2,7 +2,7 @@ export interface CampusEvent {
   slug: string;
   title: string;
   kicker: string;
-  category: "Talk" | "Workshop" | "Competition" | "Mixer" | "Summit";
+  category: "Talk" | "Workshop" | "Competition" | "Mixer" | "Hackathon";
   status: "Upcoming" | "Ongoing" | "Past";
   date: string;
   time: string;
@@ -108,19 +108,19 @@ export const EVENTS: CampusEvent[] = [
     prerequisites: ["Bring 1 genuine question about distribution or retention"],
   },
   {
-    slug: "summit-26-unfinished",
-    title: "E Summit 26: UNFINISHED",
-    kicker: "ANNUAL FLAGSHIP FESTIVAL",
-    category: "Summit",
+    slug: "polaris-demo-day-2026",
+    title: "Polaris Demo Day 2026",
+    kicker: "FLAGSHIP PITCH SHOWCASE",
+    category: "Competition",
     status: "Upcoming",
     date: "Oct 17 to 18, 2026",
-    time: "9:00 AM to 8:00 PM IST (2 Days)",
+    time: "9:00 AM to 6:00 PM IST (2 Days)",
     venue: "Polaris Campus & Tech Park Pavilion",
     xpReward: 250,
     capacity: "500 Attendees",
     spotsLeft: 95,
-    shortDesc: "2 full days of founder war stories, tech conclaves, live investor pitches, and the campus demo alley.",
-    fullDesc: "UNFINISHED is E Cell PST's flagship annual summit. Bringing together 25+ operators, 15+ angel investors, and hundreds of student builders from across Karnataka and beyond.",
+    shortDesc: "Selected student founders pitch to industry mentors for seed funding and direct paid startup internships.",
+    fullDesc: "Polaris Demo Day is E Cell PST's flagship annual showcase. Bringing together 25+ operators, 15+ angel investors, and hundreds of student builders from across Karnataka and beyond.",
     speaker: {
       name: "Saahi Dubey",
       role: "President",
@@ -128,12 +128,12 @@ export const EVENTS: CampusEvent[] = [
       avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&auto=format&fit=crop&q=80",
     },
     agenda: [
-      { time: "Day 1 (09:00 AM)", activity: "Conclave Keynotes: Builders, Youth, Capital" },
-      { time: "Day 1 (03:00 PM)", activity: "Breakout teardowns & architecture roasts" },
-      { time: "Day 2 (10:00 AM)", activity: "IGNITE Grand Finals Live Pitching" },
-      { time: "Day 2 (04:00 PM)", activity: "Demo Alley showcase & award ceremony" },
+      { time: "Day 1 (09:00 AM)", activity: "Product Screening & Technical Demo Clinics" },
+      { time: "Day 1 (03:00 PM)", activity: "Architecture teardowns & operator reviews" },
+      { time: "Day 2 (10:00 AM)", activity: "Live Pitching before Angels & Mentors" },
+      { time: "Day 2 (04:00 PM)", activity: "Demo Alley showcase & internship matchmaking" },
     ],
-    prerequisites: ["E Summit pass required", "Request invite pass via website"],
+    prerequisites: ["Demo Day registration required", "Register via website"],
   },
   {
     slug: "hostel-hack-night-04",

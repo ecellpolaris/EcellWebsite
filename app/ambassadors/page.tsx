@@ -48,7 +48,7 @@ export default function AmbassadorsPage() {
               SPARK Ambassadors.
             </h1>
             <p className="text-base sm:text-lg text-ink-muted leading-relaxed">
-              Represent E Cell PST at your campus or university. Scout high conviction dorm ventures, host satellite pitch screenings, and unlock VIP access to E Summit 26.
+              Represent E Cell PST at your campus or university. Scout high conviction dorm ventures, host satellite pitch screenings, and unlock VIP access to Polaris Demo Day.
             </p>
           </div>
 
